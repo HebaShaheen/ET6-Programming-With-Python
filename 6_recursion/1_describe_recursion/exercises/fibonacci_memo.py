@@ -14,7 +14,7 @@ def fibonacci(n: int, memo: dict = {}) -> int:
 
     base case 2:  n = 1      -> 1
 
-    base case 3:  n in memo  -> memo[n]
+    base case 3:  n in memo  -> memo[n]   if the argument in memo -> return the value stored in that key
 
     recursive case: n > 1    -> ƒ(n - 1) + ƒ(n - 2)
 

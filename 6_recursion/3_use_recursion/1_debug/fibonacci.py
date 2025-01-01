@@ -10,3 +10,6 @@ def fibonacci(n: int) -> int:
         return 0
 
     return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+print(fibonacci(0), "should be", 0)

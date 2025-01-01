@@ -22,8 +22,10 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
+from trace_calls import trace_calls
 
-# @trace_calls
+
+@trace_calls
 def fibonacci(n: int) -> int:
     if n <= 0:
         return 0
