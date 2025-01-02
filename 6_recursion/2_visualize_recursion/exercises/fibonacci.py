@@ -38,9 +38,9 @@ def fibonacci(n: int) -> int:
 
 # --- call the traced function ---
 
-fibonacci(0)
-fibonacci(1)
-fibonacci(2)
+# fibonacci(0)
+# fibonacci(1)
+# fibonacci(2)
 fibonacci(4)
-fibonacci(6)
-fibonacci(8)
+# fibonacci(6)
+# fibonacci(8)

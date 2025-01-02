@@ -21,9 +21,10 @@ import sys
 import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
+from trace_calls import trace_calls
 
 
-# @trace_calls
+@trace_calls
 def reverse_list(to_reverse: list) -> list:
     if len(to_reverse) == 0:
         return []

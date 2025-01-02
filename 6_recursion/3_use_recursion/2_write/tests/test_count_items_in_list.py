@@ -3,7 +3,9 @@
 
 import unittest
 
-from ..count_elements_in_list import count_items_in_list
+from ..count_items_in_list import count_items_in_list
+
+"""Test the count_items_in_list function """
 
 
 class TestCountItemsInList(unittest.TestCase):

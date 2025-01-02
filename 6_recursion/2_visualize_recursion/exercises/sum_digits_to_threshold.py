@@ -22,8 +22,10 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
+from trace_calls import trace_calls
 
-# @trace_calls
+
+@trace_calls
 def sum_digits_to_threshold(n, threshold):
     if n < 10:
         return n

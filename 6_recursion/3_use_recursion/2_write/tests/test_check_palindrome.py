@@ -7,17 +7,19 @@ from ..check_palindrome import check_palindrome
 
 
 class TestCheckPalindrome(unittest.TestCase):
+    """Test palindrome function"""
+
     def test_empty_string(self):
-        self.assertTrue(check_palindrome(""), _)
+        self.assertTrue(check_palindrome(""), True)
 
     def test_single_character(self):
-        self.assertTrue(check_palindrome("a"), _)
+        self.assertTrue(check_palindrome("a"), True)
 
     def test_palindrome_even_length(self):
-        self.assertTrue(check_palindrome("abba"), _)
+        self.assertTrue(check_palindrome("abba"), True)
 
     def test_palindrome_odd_length(self):
-        self.assertTrue(check_palindrome("madam"), _)
+        self.assertTrue(check_palindrome("madam"), True)
 
     def test_not_a_palindrome(self):
-        self.assertFalse(check_palindrome("hello"), _)
+        self.assertFalse(check_palindrome("hello"), False)

@@ -3,7 +3,7 @@
 
 
 def reverse_list(to_reverse: list) -> list:
-    if to_reverse == 0:
+    if len(to_reverse) == 0:
         return []
 
-    return reverse_list(to_reverse[1]) + [to_reverse[0]]
+    return reverse_list(to_reverse[1:]) + [to_reverse[0]]

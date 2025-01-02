@@ -5,6 +5,8 @@ import unittest
 
 from ..fibonacci_number import fibonacci_number
 
+"""Test fibonacci function"""
+
 
 class TestFibonacciNumber(unittest.TestCase):
     def test_fibonacci_0(self):
@@ -17,7 +19,7 @@ class TestFibonacciNumber(unittest.TestCase):
         self.assertEqual(fibonacci_number(2), 1)
 
     def test_fibonacci_3(self):
-        self.assertEqual(fibonacci_number(3), 2)
+        self.assertEqual(fibonacci_number(8), 21)
 
     def test_fibonacci_6(self):
         self.assertEqual(fibonacci_number(6), 8)

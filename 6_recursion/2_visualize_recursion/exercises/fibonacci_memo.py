@@ -11,7 +11,7 @@ To visualize strategy:
 - uncomment @trace_calls and run the script
 or copy the code into one of these sites:
 - https://www.recursionvisualizer.com
-- (https://recursion.vercel.app
+- https://recursion.vercel.app
 - https://recursion-visualizer.vercel.app
 - https://visualgo.net/en/recursion
 
@@ -45,5 +45,5 @@ def fibonacci_memo(n: int, memo: dict = {}) -> int:
 fibonacci_memo(1)
 # fibonacci_memo(8)
 # fibonacci_memo(4)
-fibonacci_memo(6)
+fibonacci_memo(4)
 # fibonacci_memo(10)
