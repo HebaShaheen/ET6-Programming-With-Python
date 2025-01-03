@@ -13,6 +13,14 @@ def flatten_nested_list(thelist: list, result=None) -> list:
         list: A flat list containing all elements of the input list in order.
     Raises:
         TypeError: If the input is not a list.
+    >>> flatten_nested_list([1, [2, 3, [4, 5]], 6])
+    [1, 2, 3, 4, 5, 6]
+
+    >>> flatten_nested_list([3,[2,3],[4, 7]])
+    [3, 2, 3, 4, 7]
+
+    >>> flatten_nested_list([5,[4, 7, 9],[6]])
+    [5, 4, 7, 9, 6]
     """
     if not isinstance(thelist, list):
         raise TypeError("Input must be a list")
@@ -28,4 +36,4 @@ def flatten_nested_list(thelist: list, result=None) -> list:
     return result
 
 
-print(flatten_nested_list([1, [2, 3, [4, 5]], 6]))
+print(flatten_nested_list([5, [4, 7, 9], [6]]))

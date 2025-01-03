@@ -14,16 +14,27 @@ def find_biggest_number(thelist: list[int]) -> int:
 
     Returns:
         int: returns the biggest number
+
+    >>> find_biggest_number([4, 8, 1])
+    8
+
+    >>> find_biggest_number([5, 90, 90])
+    90
+
+    >>> find_biggest_number([124, 403, 620])
+    620
     """
 
     assert isinstance(thelist, list), "This should be a list"
 
-    if not thelist:  # Check if the list is empty
-        raise ValueError("Please provide a non-empty list.")
+    if not thelist:  # Base case 1
+        # Turn_around 1
+        raise ValueError("The list is empty. Cannot find the biggest number.")
+    if len(thelist) == 1:  # Base case 2
+        return thelist[0]  # Turn_around 2
 
-    biggest = thelist[0]
-    for item in thelist:
-        assert isinstance(item, int), "items should be integer"
-        if item > biggest:
-            biggest = item
-    return biggest
+    next_num = find_biggest_number(thelist[1:])  # Recursive call | Breack_down
+    if thelist[0] > next_num:
+        return thelist[0]
+    else:
+        return next_num

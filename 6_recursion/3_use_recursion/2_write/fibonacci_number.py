@@ -13,6 +13,16 @@ def fibonacci_number(n: int) -> int:
     base case 3:  n in memo  -> memo[n]   if the argument in memo -> return the value stored in that key
 
     recursive case: n > 1    -> ƒ(n - 1) + ƒ(n - 2)
+
+    >>> fibonacci_number(1)
+    1
+
+    >>> fibonacci_number(5)
+    5
+
+    >>> fibonacci_number(8)
+    21
+
     """
     if n <= 0:
         return 0
@@ -20,6 +30,3 @@ def fibonacci_number(n: int) -> int:
         return 1
     else:
         return fibonacci_number(n - 1) + fibonacci_number(n - 2)
-
-
-print(fibonacci_number(6))

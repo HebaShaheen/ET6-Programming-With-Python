@@ -11,6 +11,16 @@ def check_palindrome(word: str) -> bool:
 
     Returns:
         bool: return True if it is palindrome and False if not
+
+    >>> check_palindrome("madam")
+    True
+
+    >>> check_palindrome("hello")
+    False
+
+    >>> check_palindrome("RAR")
+    True
+
     """
     # reverse = "".join(reversed(word))  # Convert the reversed iterator to a string
 
